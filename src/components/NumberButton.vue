@@ -7,11 +7,12 @@
 </script>
 
 <template>
-  <md-filled-button>{{ number }}</md-filled-button>
+  <md-filled-button class="number-button">{{ number }}</md-filled-button>
 </template>
 
 <style scoped>
   .number-button {
-
+    width: 50px;
+    height: 50px;
   }
 </style>

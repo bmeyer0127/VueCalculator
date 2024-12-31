@@ -13,6 +13,7 @@ import '@material/web/checkbox/checkbox.js'
   <header>
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <NumberContainer />
       <NumberButton number="5" />
     </div>
   </header>

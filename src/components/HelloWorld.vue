@@ -18,6 +18,7 @@ defineProps<{
   </div>
 </template>
 
+
 <style scoped>
 
 h1 {
