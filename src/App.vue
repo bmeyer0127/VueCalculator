@@ -11,14 +11,12 @@ import '@material/web/checkbox/checkbox.js'
 
 <template>
   <header>
-    <div class="wrapper">
+    <!-- <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <NumberContainer />
-      <NumberButton number="5" />
-    </div>
+    </div> -->
   </header>
 
   <main>
-    <TheWelcome />
+    <NumberContainer />
   </main>
 </template>

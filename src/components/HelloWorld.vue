@@ -14,7 +14,6 @@ defineProps<{
       <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
-    <md-filled-button class="material-button">ahoy</md-filled-button>
   </div>
 </template>
 
