@@ -1,15 +1,14 @@
 <script setup lang="ts">
   import { ref } from 'vue';
-  import NumbersContainer from './components/NumbersContainer.vue'
-  import NumberButton from './components/NumberButton.vue';
-  import Screen from './components/Screen.vue'
+  import NumberButton from './components/NumberButton.vue'
+  import ScreenDisplay from './components/ScreenDisplay.vue'
   import '@material/web/button/filled-button.js'
   import '@material/web/button/outlined-button.js'
   import '@material/web/button/elevated-button.js'
   import '@material/web/checkbox/checkbox.js'
 
   const numbers = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
-  let screenDisplay = ref<string>('');
+  const screenDisplay = ref<string>('');
 
   const appendNumber = (num: string) => {
     screenDisplay.value += num;
@@ -19,10 +18,10 @@
 <template>
   <main>
     <div class="calc-container">
-      <Screen :display="screenDisplay" class="screen-container"/>
+      <ScreenDisplay :display="screenDisplay"/>
 
       <div class="numbers-container">
-        <NumberButton v-for="number in numbers" :number="number" :class="'num-class-' + number" @click="appendNumber(number.toString())"/>
+        <NumberButton v-for="number in numbers" :number="number" :key="number" :class="'num-class-' + number" @click="appendNumber(number.toString())"/>
       </div>
 
     </div>
@@ -50,9 +49,5 @@
 
   .num-class-0 {
     grid-column-start: 2;
-  }
-  
-  .screen-container {
-    
   }
 </style>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { ref } from 'vue';
   import NumberButton from './NumberButton.vue';
-  import Screen from './Screen.vue';
+  import Screen from './ScreenDisplay.vue';
 
   const numbers = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 </script>
