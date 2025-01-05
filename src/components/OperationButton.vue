@@ -2,21 +2,20 @@
   import '@material/web/button/filled-button.js'
 
   defineProps<{
-    number: number
+    operation: string
   }>()
 </script>
 
 <template>
-  <md-filled-button class="number-button">{{ number }}</md-filled-button>
+  <md-filled-button class="operation-button">{{ operation }}</md-filled-button>
 </template>
 
 <style scoped>
-  .number-button {
-    display: flex;
+  .operation-button {
+    width: 50px;
+    height: 50px;
     border: 2px solid #181818;
     border-radius: 0;
     --md-sys-color-primary: #2b2a33;
-    height: var(--button-size);
-    width: var(--button-size);
   }
 </style>

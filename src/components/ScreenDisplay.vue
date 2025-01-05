@@ -1,21 +1,23 @@
 <script setup lang="ts">
 
   defineProps<{
-    display: string
+    expression: string,
+    result: string
   }>()
 </script>
 
 <template>
-  <div class="container">
-    <h1 class="display-items">{{ display != "" ? display : "0" }}</h1>
+  <div class="screen-container">
+    <h1 class="display-items expression">{{ expression }}</h1>
+    <h1 class="display-items result">{{ result != "" ? "= " + result : "= 0" }}</h1>
   </div>
 </template>
 
 <style scoped>
-.container {
+.screen-container {
   display: flex;
-  flex-flow: row-reverse wrap-reverse;
-  align-items: flex-end;
+  flex-flow: column wrap-reverse;
+  align-items: flex-start;
   background: white;
   color: black;
   width: 100%;
@@ -26,5 +28,13 @@
   display: flex;
   flex-basis: content;
   margin: 0 1rem;
+}
+
+.expression {
+
+}
+
+.result {
+
 }
 </style>
