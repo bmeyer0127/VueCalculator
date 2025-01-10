@@ -3,13 +3,14 @@
   defineProps<{
     expression: string,
     result: string
-  }>()
+  }>();
 </script>
 
 <template>
   <div class="screen-container">
-    <h1 class="display-items expression">{{ expression }}</h1>
-    <h1 class="display-items result">{{ result != "" ? "= " + result : "= 0" }}</h1>
+    <h1 class="display-items expression">{{ expression != "" ? expression : "0" }}</h1>
+    <!-- <textarea class="display-items expression" :value="expression"></textarea> -->
+    <h1 class="display-items result">{{ result != "" ? "= " + result : "= 0"}}</h1>
   </div>
 </template>
 
@@ -21,7 +22,7 @@
   background: white;
   color: black;
   width: 100%;
-  height: 20%;
+  height: calc(100vh - (var(--button-size) * 11))
 }
 
 .display-items {

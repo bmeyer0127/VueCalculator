@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import '@material/web/button/filled-button.js'
+  import CalcButton from './CalcButton.vue';
 
   defineProps<{
     number: number
@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <md-filled-button class="number-button">{{ number }}</md-filled-button>
+   <CalcButton class="number-button">{{ number }}</CalcButton>
 </template>
 
 <style scoped>
@@ -15,7 +15,6 @@
     display: flex;
     border: 2px solid #181818;
     border-radius: 0;
-    --md-sys-color-primary: #2b2a33;
     height: var(--button-size);
     width: var(--button-size);
   }

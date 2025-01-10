@@ -1,7 +1,9 @@
 html, body {
   background-color: black;
+  margin: 0;
 }
 
 :root {
-  --button-size: 50px;
+  --button-size: 52px;
 }
+
