@@ -5,5 +5,17 @@ html, body {
 
 :root {
   --button-size: 52px;
+  --screen-color: #FBF5E5;
+  --button-color: #212121;
+  --button-text-color: #FBF5E5;
+  --button-border-color: #212121;
+  --button-color-hover: #A35C7A;
+  --button-text-color-hover: #FBF5E5;
+  --history-button-color: #FBF5E5;
+  --history-button-border-color: #212121;
+  --history-button-text-color: #212121;
+  --history-button-color-hover: #A35C7A;
+  --history-button-border-color-hover: #A35C7A;
+  --history-button-text-color-hover: #FBF5E5;
 }
 

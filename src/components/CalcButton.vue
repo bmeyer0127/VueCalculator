@@ -15,16 +15,17 @@ defineProps({
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2b2a33;
-  border: 2px solid #181818;
+  background-color: var(--button-color);
+  border: 2px solid var(--button-border-color);
   border-radius: 0;
-  color: white;
+  color: var(--button-text-color);
   height: var(--button-size);
   width: var(--button-size);
 }
 
 .calc-button:hover {
-  background-color: #3c3b43;
+  background-color: var(--button-color-hover);
+  color: var(--button-text-color-hover);
   cursor: pointer;
   transition-duration: .1s;
 }
